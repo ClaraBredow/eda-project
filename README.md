@@ -1,51 +1,27 @@
-# ds-project-template
+# Data Science EDA project
 
-Template for creating ds simple projects
+Exploratory Data Analysis project within the NeueFische Data Science Bootcamp.
+
+The task was to download a dataset about King County house sales from the Postgre Database and analyze the contents.
+This includes getting an overview of the data prior to cleaning it. First, general hypotheses / questions to the dataset were answered through visualization by plotting. Going deeper into specific questions, a stakeholder was chosen from the list in the assignment file and the data analysis was subsequently tailored to their individual needs. The whole process is documented in the Jupyter Notebook CB-EDA, as well as in a final presentation which contains the generated insights.
+
+The necessary libraries and packages to set up the environment are found in the requirements file.
 
 ## Requirements
 
 - pyenv
 - python==3.9.8
 
-## Setup
-
-One of the first steps when starting any data science project is to create a virtual environment. For this project you have to create this environment from scratch yourself. However, you should be already familiar with the commands you will need to do so. The general workflow consists of... 
-
-* setting the python version locally to 3.9.8
-* creating a virtual environment using the `venv` module
-* activating your newly created environment 
-* upgrading `pip` (This step is not absolutely necessary, but will save you trouble when installing some packages.)
-* installing the required packages via `pip`
-
-At the end, you want to make sure that people who are interested in your project can create an identical environment on their own computer in order to be able to run your code without running into errors. Therefore you can create a `requirements file` and add it to your repository. You can create such a file by running the following command: 
-
-```bash
-pip freeze > requirements.txt
-```
-
-*Note: In rare case such a requirements file created with `pip freeze` might not ensure that another (especially M1 chip) user can install and execute it properly. This can happen if libraries need to be compiled (e.g. SciPy). Then it also depends on environment variables and the actual system libraries.*
-
-### Unit testing (Optional)
-
-If you write python scripts for your data processing methods, you can also write unit tests. In order to run the tests execute in terminal:
-
-```bash
-pytest
-```
-
-This command will execute all the functions in your project that start with the word **test**.
-
-
 ### Environment
 
-This repo contains a requirements.txt file with a list of all the packages and dependencies you will need. Before you install the virtual environment, make sure to install postgresql if you haven't done it before.
+This repo contains a requirements.txt file with a list of all the packages and dependencies that are needed. Prior to installing the environment, postgresql needs to be downloaded.
 
 ```bash
 brew update
 brew install postgresql
 ```
 
-In order to install the environment you can use the following commands:
+The following commands will install the virtual environment:
 
 ```
 pyenv local 3.9.8
